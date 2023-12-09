@@ -21,7 +21,6 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         },
       }}
     >
-
       <SocialMediaIcons />
 
       <UserAvatar />

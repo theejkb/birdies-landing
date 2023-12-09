@@ -7,10 +7,10 @@ export const dappHostname = process.env.NEXT_PUBLIC_DAPP_HOST;
 
 // HTML metata and og tags, default values for MetaHead.tsx component
 export const defaultMetaTags = {
-  title: 'Elven Tools NFT minter dapp demo - MultiversX blockchain',
+  title: 'Birdies Landing - MultiversX blockchain',
   description:
-    'Open source Dapp template for the Elven Tools and MultiversX blockchain. The actual working example is connected to the Elven Tools smart contract deployed on the MultiversX blockchain devnet!',
-  image: `${dappHostname}/og-image.png`,
+    'Official Birdies Landing page. High-quality art and good vibes only.',
+  image: `${dappHostname}/website.png`,
 };
 
 // FAQ section data

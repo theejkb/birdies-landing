@@ -22,6 +22,16 @@
 
     &.card-two {
       width: fit-content;
+      margin-left: 20%;
+
+      p {
+        margin: 0;
+      }
+    }
+    &.card-three{
+      margin-left: 7%;
+      width: 110%;
+      grid-area: auto;
     }
 
     .text-birdies {

@@ -14,22 +14,22 @@ import {useNetworkSync} from '@useelven/core';
 import {theme} from '../config/chakraTheme';
 import {SWRConfig} from 'swr';
 import {useCallback, useEffect} from 'react';
-import "../public/styles/style.scss";
-
+import '../public/styles/style.scss';
+import {SpeedInsights} from "@vercel/speed-insights/next"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const toastId = 'elven-tools-error-toast';
 
-const ElvenToolsDapp = ({ Component, pageProps }: AppProps) => {
+const ElvenToolsDapp = ({Component, pageProps}: AppProps) => {
   useNetworkSync({
     apiTimeout: '10000',
     chainType: process.env.NEXT_PUBLIC_MULTIVERSX_CHAIN,
     ...(process.env.NEXT_PUBLIC_MULTIVERSX_API
-      ? { apiAddress: process.env.NEXT_PUBLIC_MULTIVERSX_API }
+      ? {apiAddress: process.env.NEXT_PUBLIC_MULTIVERSX_API}
       : {}),
     ...(process.env.NEXT_PUBLIC_WC_PROJECT_ID
-      ? { walletConnectV2ProjectId: process.env.NEXT_PUBLIC_WC_PROJECT_ID }
+      ? {walletConnectV2ProjectId: process.env.NEXT_PUBLIC_WC_PROJECT_ID}
       : {}),
   });
 
@@ -52,18 +52,19 @@ const ElvenToolsDapp = ({ Component, pageProps }: AppProps) => {
 
   useEffect(() => {
     AOS.init({
-      easing: "ease-out",
+      easing: 'ease-out',
       once: false,
       offset: 200,
-      anchorPlacement: "top-center"
+      anchorPlacement: 'top-center',
     });
   }, []);
 
   return (
-    <SWRConfig value={{ onError: handleErrorToast }}>
-      <ChakraProvider theme={theme}>
-        <Component {...pageProps} />
-      </ChakraProvider>
+    <SWRConfig value={{onError: handleErrorToast}}>
+      <SpeedInsights/>
+        <ChakraProvider theme={theme}>
+          <Component {...pageProps} />
+        </ChakraProvider>
     </SWRConfig>
   );
 };

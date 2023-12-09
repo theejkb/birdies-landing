@@ -1,10 +1,7 @@
 import NextLink from 'next/link';
-import { Box, Img, Text } from '@chakra-ui/react';
-import { useConfig } from '@useelven/core';
+import { Box, Img } from '@chakra-ui/react';
 
 export const Logo = () => {
-  const { chainType } = useConfig();
-
   return (
     <NextLink href="/">
       <Box
@@ -14,7 +11,7 @@ export const Logo = () => {
         position="relative"
         userSelect="none"
       >
-        <Img borderRadius={50} src='/img/birdies-img.jpg' width={75} height={75}></Img>
+        <Img borderRadius={50} src="/favicon.ico" width={75} height={75}></Img>
       </Box>
     </NextLink>
   );

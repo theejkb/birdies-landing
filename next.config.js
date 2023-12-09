@@ -28,6 +28,9 @@ const nextConfig = {
   eslint: {
     dirs: ['components', 'config', 'hooks', 'pages', 'store', 'types', 'utils'],
   },
+  experimental: {
+    webpackBuildWorker: true
+  },
   images: {
     domains: [
       'nftstorage.link',
