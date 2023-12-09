@@ -1,0 +1,54 @@
+{
+  "name": "elven-tools-dapp",
+  "version": "7.4.0",
+  "author": "Julian Ćwirko <julian.io>",
+  "license": "MIT",
+  "homepage": "https://www.elven.tools",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElvenTools/elven-tools-dapp"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write '**/*.{js,ts,tsx,json}'"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "2.1.1",
+    "@chakra-ui/react": "2.8.1",
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@fontsource/poppins": "5.0.8",
+    "@multiversx/sdk-core": "12.11.0",
+    "@useelven/core": "0.10.2",
+    "aos": "^2.3.4",
+    "bignumber.js": "9.1.2",
+    "crypto-browserify": "3.12.0",
+    "next": "14.0.0",
+    "path-browserify": "1.0.1",
+    "process": "0.11.10",
+    "qrcode": "1.5.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "4.11.0",
+    "react-social-icons": "6.4.0",
+    "sass": "^1.69.5",
+    "stream-browserify": "3.0.0",
+    "swr": "2.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.9",
+    "@types/qrcode": "1.5.4",
+    "@types/react": "18.2.33",
+    "@typescript-eslint/eslint-plugin": "6.9.0",
+    "@typescript-eslint/parser": "6.9.0",
+    "eslint": "8.52.0",
+    "eslint-config-next": "14.0.0",
+    "eslint-config-prettier": "9.0.0",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
+  }
+}

@@ -1,0 +1,90 @@
+@import "hero";
+@import "roadmap";
+
+*, html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background: url('/img/background.jpg') 50% center no-repeat !important;
+  background-size: cover !important;
+}
+
+h2, h1 {
+  font-family: "ARCO Typography", serif;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  .row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    .box-1 {
+      width: 50%;
+    }
+
+    .box-2 {
+      width: fit-content;
+      min-width: 300px;
+
+      .text-birdies {
+        margin: 0;
+      }
+    }
+  }
+
+  .row-2 {
+    display: flex;
+    justify-content: center;
+
+    .box-1 {
+      width: 70%;
+    }
+  }
+
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #000000cf;
+  border-top: 3px solid #00ffa8;
+  left: 0;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  font-family: "ARCO Typography", serif;
+  text-transform: uppercase;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .join-lab {
+    font-size: 1.5em;
+  }
+
+  .socials {
+    display: flex;
+    gap: 25px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
