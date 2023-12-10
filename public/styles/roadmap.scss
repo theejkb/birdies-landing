@@ -3,89 +3,99 @@
   flex-direction: column;
   gap: 25px;
 
-    .row-1 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      gap: 50px;
-      flex-wrap: wrap;
+  .row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
 
-      .box-1 {
-        width: 50%;
-      }
-
-      .box-2 {
-        width: fit-content;
-        min-width: 300px;
-        line-height: 30px;
-        height: fit-content;
-        margin-top: auto;
-
-        .text-birdies {
-          margin: 0;
-        }
-      }
+    .box-1 {
+      width: 50%;
     }
 
-
-    .row-2 {
-      display: flex;
-      justify-content: center;
-
-      .box-3 {
-        width: 60%;
-      }
-    }
-
-
-    .card {
-      border-radius: 25px;
-      border: 2px solid #00ffa8;
-      background: rgba(122, 122, 122, 0.72);
-      text-transform: uppercase;
-      font-family: "Arco", serif;
-      padding: 10px;
-      margin: 0;
-
-      &.card-two {
-        width: fit-content;
-        margin-left: 20%;
-
-        p {
-          margin: 0;
-        }
-      }
+    .box-2 {
+      width: fit-content;
+      min-width: 300px;
+      line-height: 30px;
+      height: fit-content;
+      margin-top: auto;
 
       .text-birdies {
-        color: #00ffa8;
-        -webkit-text-stroke: 1px black;
-        text-transform: uppercase;
-        font-size: 2.25em;
-        margin-bottom: 25px;
-      }
-
-      .text-detail {
-        -webkit-text-stroke: 1px black;
-        color: white;
-        text-transform: uppercase;
-        line-height: 1em;
-      }
-
-      .card-title {
-        position: relative;
-      }
-
-      .description {
-        font-size: 0.9rem;
+        margin: 0;
       }
     }
+  }
+
+
+  .row-2 {
+    display: flex;
+    justify-content: center;
+
+    .box-3 {
+      width: 60%;
+    }
+  }
+
+
+  .card {
+    border-radius: 25px;
+    border: 2px solid #00ffa8;
+    background: rgba(122, 122, 122, 0.72);
+    text-transform: uppercase;
+    font-family: "Arco", serif;
+    padding: 10px;
+    margin: 0;
+
+    &.card-two {
+      width: fit-content;
+      margin-left: 20%;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .text-birdies {
+      color: #00ffa8;
+      -webkit-text-stroke: 1px black;
+      text-transform: uppercase;
+      font-size: 2.25em;
+      margin-bottom: 25px;
+    }
+
+    .text-detail {
+      -webkit-text-stroke: 1px black;
+      color: white;
+      text-transform: uppercase;
+      line-height: 1em;
+    }
+
+    .card-title {
+      position: relative;
+    }
+
+    .description {
+      font-size: 0.9rem;
+    }
+  }
 
 }
 
 @media screen and (max-width: 750px) {
-  .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .box-container {
+    .row-1 {
+      gap: 25px;
+      .box-1,
+      .box-2 {
+        width: 100%;
+      }
+    }
+    .row-2{
+      .box-3{
+        width: 100%;
+      }
+    }
   }
+
 }
