@@ -10,9 +10,9 @@ export const Footer = () => {
           {' '}
           Learn more{' '}
           <Image
-            width={30}
-            height={30}
-            alt="text logo birdies"
+            width={75}
+            height={75}
+            alt="logo gitbook"
             src="/img/book_png.webp"
           ></Image>
         </a>
@@ -27,9 +27,9 @@ export const Footer = () => {
           {' '}
           Discord{' '}
           <Image
-            alt="text logo birdies"
-            width={30}
-            height={30}
+            alt="logo discord"
+            width={75}
+            height={75}
             src="/img/discord_png.webp"
           ></Image>
         </a>
@@ -37,9 +37,9 @@ export const Footer = () => {
           {' '}
           Twitter{' '}
           <Image
-            alt="text logo birdies"
-            width={30}
-            height={30}
+            alt="logo x"
+            width={75}
+            height={75}
             src="/img/x_png.webp"
           ></Image>
         </a>
