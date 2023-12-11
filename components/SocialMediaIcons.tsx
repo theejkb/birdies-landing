@@ -7,24 +7,24 @@ export const SocialMediaIcons = () => {
         <Image
           alt="x logo"
           src="/img/x_png.webp"
-          width={25}
-          height={25}
+          width={75}
+          height={75}
         ></Image>
       </a>
       <a href="https://discord.gg/bEHua9sq8G">
         <Image
           alt="x logo"
           src="/img/discord_png.webp"
-          width={25}
-          height={25}
+          width={75}
+          height={75}
         ></Image>
       </a>
       <a href="https://birdies.gitbook.io/birdieslabs-litepaper">
         <Image
           alt="x logo"
           src="/img/book_png.webp"
-          width={25}
-          height={25}
+          width={75}
+          height={75}
         ></Image>
       </a>
     </Box>
