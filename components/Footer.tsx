@@ -13,7 +13,7 @@ export const Footer = () => {
             width={30}
             height={30}
             alt="text logo birdies"
-            src="/img/text-logo.png"
+            src="/img/book_png.webp"
           ></Image>
         </a>
       </Box>
@@ -30,7 +30,7 @@ export const Footer = () => {
             alt="text logo birdies"
             width={30}
             height={30}
-            src="/img/text-logo.png"
+            src="/img/discord_png.webp"
           ></Image>
         </a>
         <a href="">
@@ -40,7 +40,7 @@ export const Footer = () => {
             alt="text logo birdies"
             width={30}
             height={30}
-            src="/img/text-logo.png"
+            src="/img/x_png.webp"
           ></Image>
         </a>
       </Box>
