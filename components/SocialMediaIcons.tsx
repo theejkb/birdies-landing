@@ -6,7 +6,7 @@ export const SocialMediaIcons = () => {
       <a href="https://twitter.com/_birdies_">
         <Image
           alt="x logo"
-          src="/img/x-logo.png"
+          src="/img/x_png.webp"
           width={25}
           height={25}
         ></Image>
@@ -14,7 +14,7 @@ export const SocialMediaIcons = () => {
       <a href="https://discord.gg/bEHua9sq8G">
         <Image
           alt="x logo"
-          src="/img/x-logo.png"
+          src="/img/discord_png.webp"
           width={25}
           height={25}
         ></Image>
@@ -22,7 +22,7 @@ export const SocialMediaIcons = () => {
       <a href="https://birdies.gitbook.io/birdieslabs-litepaper">
         <Image
           alt="x logo"
-          src="/img/x-logo.png"
+          src="/img/book_png.webp"
           width={25}
           height={25}
         ></Image>
